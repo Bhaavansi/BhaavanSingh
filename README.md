@@ -1,4 +1,5 @@
-### Hi there 👋
+This is Personal Portfolio Website that I created from scratch using a combination of HTML, CSS, SVG and JavaScript. 
+This is my first Frontend development project and took around 1 week of full dedication and effort
 
 <!--
 **Bhaavansi/Bhaavansi** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
