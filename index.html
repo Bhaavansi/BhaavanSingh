@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <title>Personal Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://kit.fontawesome.com/c8e4d183c2.js"
+            crossorigin="anonymous">
+        </script>
+    </head>
+
+    <body>
+            <section id="main" class= "mainpage">
+                <nav class="header-nav-bar">
+                    <a href="#" class="Headname">Bhaavan Bhullar</a>
+                    <ul>
+                        <li class="header-home"><a href="#main">Home</a></li>
+                        <li class="header-About"><a href="#aboutme">About</a></li>
+                        <li class="header-projects"><a href="#projects">Projects</a></li>
+                        <li class="header-contact"><a href="#languages">Technologies</a></li>
+                        <li class="header-contact"><a href="#contact">Contact</a></li>
+                        
+                    </ul>
+                </nav>
+            <div class="headpage_background">
+                <div class="text-container">
+                    <p>Hello</p>
+                    <p>I'm Bhaavan</p>
+                    <p>I am a Upcoming Software Developer</p>
+                    <a href="https://drive.google.com/file/d/1TglccyxSrxxsM6djsOTpPW9BVwg5l4ao/view?usp=sharing" target="_blank"><button class="resume-button">Download Resume</button></a>
+                    <a href="https://salecanada.ca/" target="_blank"><button class="ecommerce">Visit Sale Canada</button></a>
+                    <script type="text/javascript">
+                        const buttons = document.querySelectorAll('ecommerce');
+                        buttons.forEach(btn=>{
+                            btn.addEventListener('click', function(e){
+                                let x = e.clientX-e.target.offsetLeft;
+                                let y = e.clientY-e.target.offsetTop;
+
+                                let ripples = document.createElement('span');
+                                ripples.style.left = x + 'px';
+                                ripples.style.top = y + 'px';
+                                this.appendChild(ripples);
+
+                                setTimeout(() => {
+                                ripples.remove()
+                                },1000);
+                            })
+                        })
+                    </script>
+                </div>
+            </div>
+                <div class="ringoffire">
+                    <div class="circle"></div>
+                    <svg>
+                        <filter id="wavy">
+                            <feTurbulence x="0" y="0" baseFrequency="0.009" numOctaves="5" seed="2">
+                                <animate attributeName= "baseFrequency" dur="60s" values="0.02;0.005;0.02" repeatCount="indefinite">
+                            </feTurbulence>
+                            <feDisplacementMap in="SourceGraphic" scale="30"></feDisplacementMap>
+                        </filter>
+                    </svg>
+                </div>
+            </section>
+            <div id="aboutme" class="about-me-background">
+                <div class="about-me-container">
+                    <img class="personal-picture" src="pictures/About_Me_Picture.JPG">
+                    <div class="about-me-paragrpah">
+                        <p class="about-me-heading">About Me</p>
+                        <p class="about-me-subheading">Frontend/Backend Developer</p>
+                        <p class="about-me-text">My name is Bhaavan Bhullar and I am an 18-year-old high school student planning on pursuing a path in finance or computer science. I am continually working on new initiatives and projects to better understand my self the society around me. Currently working on developing my skills in the front and backend side of development through various languages and projects. I hope to be able to pursue development in blockchain technology and web3 smart contracts.</p>
+                        <p class="about-me-2">I am a hands-on, team-oriented, problem-solving student in the eCommerce world for over 2 years, helping develop new marketing strategies, pushing online sales, processing shipments, and managing new employees while expanding my skill set working with suppliers and technologies used to take the company to the next level. Co-Founder and president of a health Initiative focused on providing students at Bishop Ryan Highschool with the necessary resources and information to support themselves in these unprecedented times. </p>
+                    </div>
+                </div>
+            </div>
+            <div id="projects" class="projects-background">
+                
+                <div class="projects-header">
+                    <p class="projects">Projects</p>
+                </div>
+                <div class="container-1">
+                    <div class="box-1">
+                        <span>1</span>
+                        <h3>Personal Portfolio</h3>
+                        <img class = "personal-website1" src="pictures/2022-02-01.png">
+                        <p>The website you are looking at now, created from scratch using pure HTML, CSS3, SVG </p>
+                        <a href="#" target="_blank"><button class="github-projects">Github Repository</button></a>
+                    </div>
+                    <div class="box-1">
+                        <span>2</span>
+                        <h3>Wordle: Personal Edition</h3>
+                        <img class = "personal-website2" src="pictures/Wordguess.jpg">
+                        <p>Complete New York Times Wordle game created using Python and JavaScript</p>
+                        <a href="#" target="_blank"><button class="github-projects">Github Repository</button></a>
+                    </div>
+                    <div class="box-1">
+                        <span>3</span>
+                        <h3>Cruise Line Booking Agency</h3>
+                        <img class = "personal-website3" src="pictures\2022-02-23.png">
+                        <p>C# Console.Net application that mimics the front end and backend of a Cruise Line booking agency </p>
+                        <a href="#" target="_blank"><button class="github-projects">Github Repository</button></a>
+                    </div>
+                </div>
+                <div class="container-2">
+                    <div class="box-2">
+                        <span>4</span>
+                        <h3>Ethereum Smart Contract</h3>
+                        <img class = "personal-website4" src="pictures\EthereumSmartContract.png">
+                        <p>Ethereum contract created using the solidity smart contract platform </p>
+                        <a href="#" target="_blank"><button class="github-projects">Github Repository</button></a>
+                    </div>
+                    <div class="box-2">
+                        <span>5</span>
+                        <h3>Simple Crypto Trading Bot</h3>
+                        <img class = "personal-website4" src="pictures\pro-trading-view.jpg">
+                        <p>Created a crypto trading bot with python using the Coinbase API </p>
+                        <a href="#" target="_blank"><button class="github-projects">Github Repository</button></a>
+                    </div>
+                </div>
+            </div>
+            <section id="languages"> 
+                <div class="container">
+                    <div class="row">
+                        <h1 class="section_title">My Technology Stack</h1>
+                        <div class="language_list">
+                            <div class="language">
+                                <figure class="language_img_wrapper">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="Html Logo" class="language_img">
+                                </figure>
+                                <span class="language_name">HTML</span>
+                            </div>
+                            <div class="language">
+                                <figure class="language_img_wrapper">
+                                    <img src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="Html Logo" class="language_img">
+                                </figure>
+                                <span class="language_name">CSS</span>
+                            </div>
+                            <div class="language">
+                                <figure class="language_img_wrapper">
+                                    <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="Html Logo" class="language_img">
+                                </figure>
+                                <span class="language_name">JAVASCRIPT</span>
+                            </div>
+                            <div class="language">
+                                <figure class="language_img_wrapper">
+                                    <img src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="Html Logo" class="language_img">
+                                </figure>
+                                <span class="language_name">REACT</span>
+                            </div>
+                            <div class="language">
+                                <figure class="language_img_wrapper">
+                                    <img src="https://cdn.iconscout.com/icon/free/png-256/python-2-226051.png"class="language_img">
+                                </figure>
+                                <span class="language_name">PYTHON</span>
+                            </div>
+                            <div class="language">
+                                <figure class="language_img_wrapper">
+                                    <img src="https://cdn.iconscout.com/icon/free/png-256/csharp-1-1175241.png" alt="Html Logo" class="language_img">
+                                </figure>
+                                <span class="language_name">C#</span>
+                            </div>
+                            <div class="language">
+                                <figure class="language_img_wrapper">
+                                    <img src="https://cdn.iconscout.com/icon/free/png-256/wordpress-1-226061.png" alt="Html Logo" class="language_img">
+                                </figure>
+                                <span class="language_name">WORDPRESS</span>
+                            </div>
+                            <div class="language">
+                                <figure class="language_img_wrapper">
+                                    <img src="https://cdn.iconscout.com/icon/premium/png-256-thumb/sql-file-2694551-2246328.png" alt="Html Logo" class="language_img">
+                                </figure>
+                                <span class="language_name">SQL DATABASE</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div id="contact" class="contact-section">
+                <h1>Contact Me</h1>
+                <div class="border"></div>
+                <form onsubmit="sendEmail(); reset(); return false;" class="contact-form" action="index.html" method="post">
+                  <input type="text" class="contact-form-text" placeholder="Your name">
+                  <input type="email" class="contact-form-text" placeholder="Your email">
+                  <input type="text" class="contact-form-text" placeholder="Your phone">
+                  <textarea class="contact-form-text" placeholder="Your message"></textarea>
+                  <input type="submit" class="contact-form-btn" value="Send">
+                </form>
+            </div>
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+            <script>
+                function sendEmail(){
+                    Email.send({
+                        Host : "smtp.gmail.com",
+                        Username : "contactbhaavan@gmail.com",
+                        Password : "Coru6767!",
+                        To : 'contactbhaavan@gmail.com',
+                        From : document.getElementById("email").vlaue,
+                        Subject : "New contact form inquiry",
+                        Body : "Name: " +document.getElementById("name").vlaue
+                        + "<br> Email: " +document.getElementById("email").vlaue
+                        + "<br> Phone number: " +document.getElementById("phone").vlaue
+                        + "<br> Message: " +document.getElementById("message").vlaue
+
+
+                    }).then(
+                    message => alert("Message Sent Successfully"));
+                }
+            </script>
+            <footer class="lastsection">
+                <p>Bhaavan Singh Bhullar</p>
+                <p>Hoping to make a big comback over this next year and onwards</p>
+
+                    <div class="social_icons">
+                        <a href="https://www.linkedin.com/in/bhaavan-bhullar-352b4620a/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Bhaavansi"target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/bhaavan.si/?hl=en"target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/bhaavan_bhullar"target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/Bhaavan.si/"target="_blank"><i class="fab fa-facebook"></i></a>
+                    </div>
+                    <p class="copyright" >Copyright &copy Bhaavan Singh Bhullar</p>
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/bhaavan-bhullar-352b4620a/"target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Bhaavansi"target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/bhaavan.si/?hl=en"target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/bhaavan_bhullar"target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/Bhaavan.si/"target="_blank"><i class="fab fa-facebook"></i></a>
+
+                    </div>
+            </footer>
+    </body>
+
+
+</html>
